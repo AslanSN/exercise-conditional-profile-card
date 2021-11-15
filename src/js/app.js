@@ -47,11 +47,9 @@ function render(variables = {}) {
             variables.role != null ? variables.role : "Your role is...?"
           }</h2>
           
-          <h3>${
-            variables.country != null
-              ? variables.country
-              : "Where are you from?"
-          }</h3>
+          <h3>${variables.city != null ? variables.city : "Your city"}, ${
+    variables.country != null ? variables.country : "in wich country?"
+  }</h3>
 
           <ul class="position-right">
             <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
